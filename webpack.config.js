@@ -16,7 +16,7 @@ module.exports = {
 				exclude: /(node_modules|bower_components)/,
 				loader: 'babel',
 				query: {
-					presets: ['react', 'es2015', 'stage-2'],
+					presets: ['react', 'es2015', 'stage-2', 'stage-0'],
 					plugins: ["react-hot-loader/babel", "transform-class-properties"]
 				}
 			},
@@ -27,7 +27,7 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin('dist/styles/[name].css', {
+		new ExtractTextPlugin('./dist/styles/[name].css', {
 			allChunks: true
 		})
 	]
