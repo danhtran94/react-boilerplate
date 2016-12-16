@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install": "npm install yarn -D -g && yarn install",
+    "install-yarn": "npm install yarn -D -g && yarn install",
     "build": "node_modules/webpack/bin/webpack.js -p",
     "watch": "node_modules/webpack/bin/webpack.js -w",
-    "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --port 3000 --hot --progress --colors --inline"
+    "dev": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --port 3000 --hot --progress --colors --inline"
   },
   "author": "",
   "license": "ISC",
