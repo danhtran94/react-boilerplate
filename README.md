@@ -1,3 +1,3 @@
-# react-setup
+# react-boilerplate
 
 my react boilerplate
