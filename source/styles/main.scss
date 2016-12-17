@@ -1,4 +1,5 @@
 // HELPERS
+@import "helpers/_config";
 // BASE
 // COMPONENTS
 // LAYOUT
@@ -6,3 +7,6 @@
 // THEMES
 // VENDORS
 @import "~bulma/bulma";
+@import "~font-awesome/scss/font-awesome";
+
+// ~ path là rel tới node_modules
