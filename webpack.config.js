@@ -8,7 +8,7 @@ module.exports = {
     output: {
         filename: './dist/js/[name].js'
     },
-    devtool: 'source-map',
+    devtool: 'source-map', // cheap-module-source-map <- if production source-map
     module: {
         loaders: [
             // ES6 + Reactjs loader
@@ -35,5 +35,15 @@ module.exports = {
             }
         ]
     },
-    plugins: [new ExtractTextPlugin('./dist/styles/[name].css', {allChunks: true})]
+    plugins: [
+        new ExtractTextPlugin('./dist/styles/[name].css', {allChunks: true}),
+        // if production
+       /*  
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify('production')
+            }
+        })*/
+        
+    ]
 };
