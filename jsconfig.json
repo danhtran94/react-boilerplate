@@ -1,3 +1,4 @@
+// JS config for vscode intellisense
 {
     "compilerOptions": {
         "target": "es6",
